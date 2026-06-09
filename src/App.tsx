@@ -133,11 +133,6 @@ function App() {
       title: 'Financial Platforms',
       skills: ['Bloomberg Terminal', 'LSEG Workspace']
     },
-    {
-      icon: Award,
-      title: 'Certifications',
-      skills: ['CFA Level II Candidate']
-    }
   ];
 
   const education = [
@@ -225,12 +220,12 @@ function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-md border-b border-brown/20">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex-1 min-w-0 pr-4 text-lg sm:text-xl md:text-2xl font-display text-black tracking-wide leading-tight truncate">
+            <div className="flex-1 md:flex-none min-w-0 pr-4 md:pr-0 text-lg sm:text-xl md:text-2xl font-display text-black tracking-wide leading-tight truncate">
               <span className="md:hidden">AARUSH</span>
               <span className="hidden md:inline">AARUSH MANOJ AMBASHT</span>
             </div>
 
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex items-center justify-end gap-5 lg:gap-8 flex-shrink-0">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -529,11 +524,11 @@ function App() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display text-black mb-8 tracking-wide leading-tight break-words">SKILLS</h2>
             <div className="w-16 h-0.5 bg-brown mx-auto mb-8"></div>
             <p className="text-lg text-brown max-w-2xl mx-auto font-light">
-              Programming, analytics, visualization, finance, risk analytics, financial platforms, and investment certification.
+              Programming, analytics, visualization, finance, risk analytics, and financial platforms.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
             {skillCategories.map((category, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-black mx-auto mb-8 flex items-center justify-center">
